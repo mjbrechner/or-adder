@@ -38,10 +38,8 @@ function orAdding() {
     } else {
         // No text to process
         document.getElementById("copied-notice").innerText = "Please add the text to be processed in the box to the left.";
-        
     }
 
     document.getElementById("copied-notice").style.visibility = "visible";
     document.getElementById("text-output").style.backgroundColor = "#a8717f";
     setTimeout(copiedReturnToNormal, 5000);
-}
