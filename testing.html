@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Or Adder</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="shortcut icon" href="images/favicon-32.png" sizes="32x32">
+    <link rel="shortcut icon" href="images/favicon-128.png" sizes="128x128">
+    <link rel="shortcut icon" href="images/favicon-180.png" sizes="180x180">
+    <link rel="shortcut icon" href="images/favicon-192.png" sizes="192x192"> -->
+
+    <!-- Roboto Mono from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <h1>Or Adder</h1>
+
+    <main>
+        <div class="textbox-area">
+            <textarea class="textbox" id="text-input" aria-label="text"></textarea>
+            <div>
+                <textarea class="textbox" id="text-output" aria-label="text" onclick="textCopier()"></textarea>
+                <div id="copied-notice">Text reformatted and copied to clipboard.</div>
+            </div>
+        </div>
+
+        <div class="button-area">
+            <button class="buttons" onclick="orAdding()">Add "Or"</button>
+            <button class="buttons" onclick="textCopier()">Copy to Clipboard</button>
+        </div>
+
+
+
+    </main>
+
+    <footer>
+        <p>© 2022 <a href="https://github.com/mjbrechner">M.J. Brechner</a></p>
+        <!-- Profile picture created by M.J. Brechner © 2022 -->
+        <img class="profile-pic"
+            src="https://raw.githubusercontent.com/mjbrechner/diacritics-eraser/main/images/profile-pic.png">
+    </footer>
+
+    <script src="javascript/index.js" async defer></script>
+</body>
+
+</html>
