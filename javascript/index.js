@@ -43,3 +43,4 @@ function orAdding() {
     document.getElementById("copied-notice").style.visibility = "visible";
     document.getElementById("text-output").style.backgroundColor = "#a8717f";
     setTimeout(copiedReturnToNormal, 5000);
+}
