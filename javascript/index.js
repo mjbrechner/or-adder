@@ -12,6 +12,9 @@ function copiedReturnToNormal() {
 function orAdding() {
     let originalText = document.getElementById("text-input").value;
 
+// Clear any existing contet out of the text-output box
+document.getElementById("text-output").innerText = "";
+
     // Only continue if there is actually something in the textbox
     if (originalText !== "") {
 

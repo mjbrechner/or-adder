@@ -80,7 +80,7 @@ h1 {
     color: #F7ECDE;
     width: fit-content;
     height: fit-content;
-    font-size: 1em;
+    font-size: .75em;
     border-radius: 5px;
     padding: 5px 0 5px;
     margin: 15px 0 15px;
@@ -134,7 +134,7 @@ footer {
 
     #copied-notice {
         width: 300px;
-        font-size: 1.25em;
+        font-size: 1em;
         padding: 10px 0 10px;
         margin: 25px 0 25px;
     }
