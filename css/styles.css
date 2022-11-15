@@ -1,4 +1,4 @@
-/* Palette from Color Hunt
+/* Palette inspired by this one from Color Hunt
 #FBF8F1
 #F7ECDE
 #E9DAC1
@@ -20,13 +20,14 @@ body {
 h1 {
     font-size: 2em;
     font-weight: 700;
-    padding: .5em;
+    padding: 0 0 .25em;
     margin: 0;
 }
 
 .explanatory-text {
     margin: 0 25% 10px 25%;
     text-align: left;
+    font-size: .9em;
 }
 
 .textbox-area {
@@ -77,6 +78,7 @@ h1 {
 #text-output:focus {
     border-color: #a8717f;
 }
+
 #copied-notice {
     background-color: #862d52;
     color: #F7ECDE;
@@ -128,6 +130,7 @@ footer {
     align-items: center;
     text-align: center;
     margin-top: .5em;
+    font-size: .8em;
 }
 
 .profile-pic {
@@ -141,6 +144,11 @@ footer {
 
     h1 {
         font-size: 2.5em;
+    }
+
+    .explanatory-text {
+        padding: 0 0 .5em;
+        font-size: 1em;
     }
 
     #text-input {
@@ -174,5 +182,9 @@ footer {
     .buttons:active {
         text-shadow: .5px .5px 1px #a8717f;
         box-shadow: 1.5px 1.5px #a8717f;
+    }
+
+    footer {
+        font-size: 1em;
     }
 }
