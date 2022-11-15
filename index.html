@@ -21,17 +21,20 @@
 <body>
     <h1>Or Adder</h1>
     <p class="explanatory-text">In the box to the left, add as many lines of text as you like. Upon pressing the button,
-        an &quot;or&quot; will appear between each separate line, and everything will be encased within parentheses.</p>
+        an &quot;or&quot; will appear between each separate line, and everything will be encased within parenthesis.</p>
     <main>
         <div class="textbox-area">
             <textarea class="textbox" id="text-input" aria-label="text"></textarea>
             <div class="textbox-area-right">
                 <textarea class="textbox" id="text-output" readonly aria-label="text"></textarea>
-                <div class="button-area">
-                    <button class="button" onclick="orAdding()">Add (or)</button>
-                </div>
                 <div id="copied-notice">Text reformatted and copied to clipboard.</div>
             </div>
+        </div>
+
+        <div class="button-area">
+            <button class="buttons" onclick="orAdding()">Add (or)</button>
+            <button class="buttons" onclick="orAddingWithQuotes()">Add ("or")</button>
+            <button class="buttons" onclick="orClearing()">Clear</button>
         </div>
     </main>
     <footer>
