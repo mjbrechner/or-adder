@@ -90,7 +90,8 @@ document.getElementById("text-output").innerText = "";
     setTimeout(copiedReturnToNormal, 5000);
 }
 
-// Function to clear the output field
+// Function to clear the input and output fields
 function orClearing() {
+    document.getElementById("text-input").value = "";
     document.getElementById("text-output").innerText = "";
 }
