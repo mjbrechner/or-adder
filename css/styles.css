@@ -46,7 +46,7 @@ h1 {
     font-size: 1.5em;
     border-radius: 5px;
     border-style: solid;
-    border-width: .25em;
+    border-width: 4px;
     resize: none;
 }
 
@@ -69,7 +69,7 @@ h1 {
     font-size: 1.5em;
     border-radius: 5px;
     border-style: solid;
-    border-width: .25em;
+    border-width: 4px;
     margin-bottom: 8px;
     resize: none;
     cursor: pointer;
@@ -107,14 +107,14 @@ h1 {
     font-size: 1em;
     border-radius: 5px;
     border-style: solid;
-    border-width: .25em;
+    border-width: 4px;
     cursor: pointer;
+    box-shadow: 3px 3px #cfbfa8;
 }
 
 .buttons:active {
     text-shadow: .4px .4px .75px #a8717f;
     transform: translate(1px);
-    box-shadow: 1.2px 1.2px #a8717f;
 }
 
 a {
@@ -181,7 +181,6 @@ footer {
 
     .buttons:active {
         text-shadow: .5px .5px 1px #a8717f;
-        box-shadow: 1.5px 1.5px #a8717f;
     }
 
     footer {
