@@ -1,6 +1,7 @@
 'use strict';
 
 let textToCopy;
+let lineCount = 0;
 
 // Return display to normal after text copied message pops up
 function copiedReturnToNormal() {
@@ -12,8 +13,8 @@ function copiedReturnToNormal() {
 function orAdding() {
     let originalText = document.getElementById("text-input").value;
 
-// Clear any existing contet out of the text-output box
-document.getElementById("text-output").innerText = "";
+    // Clear any existing contet out of the text-output box
+    document.getElementById("text-output").innerText = "";
 
     // Only continue if there is actually something in the textbox
     if (originalText !== "") {
@@ -23,6 +24,9 @@ document.getElementById("text-output").innerText = "";
 
         // Delete lines that are completely blank
         editedText = editedText.replace(/\n\s*\n/g, '\n');
+
+        // Count lines (which now will not include lines that had been blank).
+        lineCount = editedText.split('\n').length;
 
         // Replace line breaks with " or "
         editedText = editedText.replace(/[\r\n]/g, " or ");
@@ -37,7 +41,7 @@ document.getElementById("text-output").innerText = "";
         // Copy output to clipboard and display message
         textToCopy = document.getElementById("text-output").value;
         navigator.clipboard.writeText(textToCopy);
-        document.getElementById("copied-notice").innerText = "Text reformatted and copied to clipboard.";
+        document.getElementById("copied-notice").innerText = `${lineCount} lines reformatted and copied to clipboard.`;
     } else {
         // No text to process
         document.getElementById("copied-notice").innerText = "Please add the text to be processed in the box to the left.";
@@ -51,8 +55,8 @@ document.getElementById("text-output").innerText = "";
 function orAddingWithQuotes() {
     let originalText = document.getElementById("text-input").value;
 
-// Clear any existing contet out of the text-output box
-document.getElementById("text-output").innerText = "";
+    // Clear any existing contet out of the text-output box
+    document.getElementById("text-output").innerText = "";
 
     // Only continue if there is actually something in the textbox
     if (originalText !== "") {
@@ -62,6 +66,9 @@ document.getElementById("text-output").innerText = "";
 
         // Delete lines that are completely blank
         editedText = editedText.replace(/\n\s*\n/g, '\n');
+
+        // Count lines (which now will not include lines that had been blank).
+        lineCount = editedText.split('\n').length;
 
         // Replace line breaks with "or" in quotes
         editedText = editedText.replace(/[\r\n]/g, "\" or \"");
@@ -80,7 +87,7 @@ document.getElementById("text-output").innerText = "";
         // Copy output to clipboard and display message
         textToCopy = document.getElementById("text-output").value;
         navigator.clipboard.writeText(textToCopy);
-        document.getElementById("copied-notice").innerText = "Text reformatted and copied to clipboard.";
+        document.getElementById("copied-notice").innerText = `${lineCount} lines reformatted and copied to clipboard.`;
     } else {
         // No text to process
         document.getElementById("copied-notice").innerText = "Please add the text to be processed in the box to the left.";
