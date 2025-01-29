@@ -86,7 +86,7 @@ h1 {
     height: fit-content;
     font-size: .75em;
     border-radius: 5px;
-    padding: 15px 0 15px;
+    padding: 10px;
     margin: 0 5px 15px;
     visibility: hidden;
 }
@@ -170,7 +170,6 @@ footer {
     #copied-notice {
         width: 300px;
         font-size: 1em;
-        padding: 10px 0 10px;
         margin: 25px 0 25px;
     }
 
