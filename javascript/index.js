@@ -41,7 +41,11 @@ function orAdding() {
         // Copy output to clipboard and display message
         textToCopy = document.getElementById("text-output").value;
         navigator.clipboard.writeText(textToCopy);
-        document.getElementById("copied-notice").innerText = `${lineCount} lines reformatted and copied to clipboard.`;
+        if (lineCount === 1) {
+            document.getElementById("copied-notice").innerText = `${lineCount} line reformatted and copied to clipboard.`;
+        } else {
+            document.getElementById("copied-notice").innerText = `${lineCount} lines reformatted and copied to clipboard.`;
+        }
     } else {
         // No text to process
         document.getElementById("copied-notice").innerText = "Please add the text to be processed in the box to the left.";
@@ -87,7 +91,11 @@ function orAddingWithQuotes() {
         // Copy output to clipboard and display message
         textToCopy = document.getElementById("text-output").value;
         navigator.clipboard.writeText(textToCopy);
-        document.getElementById("copied-notice").innerText = `${lineCount} lines reformatted and copied to clipboard.`;
+        if (lineCount === 1) {
+            document.getElementById("copied-notice").innerText = `${lineCount} line reformatted and copied to clipboard.`;
+        } else {
+            document.getElementById("copied-notice").innerText = `${lineCount} lines reformatted and copied to clipboard.`;
+        }
     } else {
         // No text to process
         document.getElementById("copied-notice").innerText = "Please add the text to be processed in the box to the left.";
