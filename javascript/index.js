@@ -2,6 +2,8 @@
 
 let textToCopy;
 let lineCount = 0;
+let timeouter;
+
 
 // Return display to normal after text copied message pops up
 function copiedReturnToNormal() {
@@ -52,7 +54,9 @@ function orAdding() {
     }
 
     document.getElementById("copied-notice").style.visibility = "visible";
-    setTimeout(copiedReturnToNormal, 5000);
+    
+    clearTimeout(timeouter);
+    timeouter = setTimeout(copiedReturnToNormal, 5000);
 }
 
 // Function to reform and copy text with quotes around each line
@@ -102,7 +106,8 @@ function orAddingWithQuotes() {
     }
 
     document.getElementById("copied-notice").style.visibility = "visible";
-    setTimeout(copiedReturnToNormal, 5000);
+    clearTimeout(timeouter);
+    timeouter = setTimeout(copiedReturnToNormal, 5000);
 }
 
 // Function to clear the input and output fields
