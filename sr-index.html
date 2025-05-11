@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>String Replacer</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon-32.png" sizes="32x32">
+    <link rel="shortcut icon" href="images/favicon-128.png" sizes="128x128">
+    <link rel="shortcut icon" href="images/favicon-180.png" sizes="180x180">
+    <link rel="shortcut icon" href="images/favicon-192.png" sizes="192x192">
+    <!-- Roboto Mono from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/sr-styles.css">
+</head>
+
+<body>
+    <h1>String Replacer</h1>
+    <!-- <div class="divider"></div> -->
+    <!-- <p class="explanatory-text">Replace the xxxxx in a string with the contents of each line of text and copy to clipboard.</p> -->
+    <main>
+        <div class="string-area">
+            <p>Add text string using xxxxx to indicate text to be replaced: </p>
+            <textarea aria-label="string-input" class="textbox" id="string-input" maxlength="50" placeholder="123xxxxx456">
+            </textarea>
+        </div>
+
+        <div class="divider"></div>
+
+        <p>In the left box, add your lines of text. Each separate line will replace the xxxxx in the text above.</p>
+        <div class="textbox-area">
+            <textarea class="textbox" id="text-input" aria-label="text"></textarea>
+            <div class="textbox-area-right">
+                <textarea class="textbox" id="text-output" readonly aria-label="text"></textarea>  
+            </div>
+        </div>
+
+        <div class="button-area">
+            <button class="buttons" onclick="orAdding()">Replace</button>
+            <div id="copied-notice">string processed and copied</div>
+            <button class="buttons" onclick="orClearing()">Clear</button>
+        </div>
+
+        <div class="divider"></div>
+    </main>
+    <footer>
+        <p>
+            <script>
+                const thisYear = new Date().getFullYear();
+                if (thisYear === 2025) {
+                    document.write(`Copyright © 2025 `);
+                } else {
+                    document.write(`Copyright © 2025-${thisYear} `);
+                }
+            </script>
+            <a href="https://github.com/mjbrechner">M.J. Brechner</a>
+        </p>
+        <!-- Profile picture created by M.J. Brechner © 2022 -->
+        <img class="profile-pic" alt="M.J. Brechner profile picture"
+            src="https://raw.githubusercontent.com/mjbrechner/diacritics-eraser/main/images/profile-pic.png">
+    </footer>
+    <script src="javascript/sr-index.js" async defer></script>
+</body>
+
+</html>
