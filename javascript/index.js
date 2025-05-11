@@ -4,7 +4,6 @@ let textToCopy;
 let lineCount = 0;
 let timeouter;
 
-
 // Return display to normal after text copied message pops up
 function copiedReturnToNormal() {
     document.getElementById("copied-notice").style.visibility = "hidden";

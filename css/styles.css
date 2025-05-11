@@ -24,6 +24,28 @@ h1 {
     margin: 0;
 }
 
+#change-mode-button {
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    color: #862d52;
+    border-color: #837579;
+    width: fit-content;
+    height: 25px;
+    font-size: 14px;
+    font-weight: 700;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 2px 2px #cfbfa8;
+}
+
+#change-mode-button:active {
+    text-shadow: .4px .4px .75px #a8717f;
+    transform: translate(1px);
+}
+
 .explanatory-text {
     margin: 0 5% 10px 5%;
     text-align: left;
