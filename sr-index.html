@@ -20,12 +20,13 @@
 
 <body>
     <h1>String Replacer</h1>
-    <a href="index.html"><button id="change-mode-button" >Or Adder</button></a>
+    <a href="index.html"><button id="change-mode-button">Or Adder</button></a>
 
     <main>
         <div class="string-area">
             <p>Add text string using xxxxx to indicate text to be replaced: </p>
-            <textarea aria-label="string-input" class="textbox" id="string-input" maxlength="50" placeholder="123xxxxx456">
+            <textarea aria-label="string-input" class="textbox" id="string-input" maxlength="50"
+                placeholder="123xxxxx456">
             </textarea>
         </div>
 
@@ -35,7 +36,7 @@
         <div class="textbox-area">
             <textarea class="textbox" id="text-input" aria-label="text"></textarea>
             <div class="textbox-area-right">
-                <textarea class="textbox" id="text-output" readonly aria-label="text"></textarea>  
+                <textarea class="textbox" id="text-output" readonly aria-label="text"></textarea>
             </div>
         </div>
 
@@ -48,7 +49,8 @@
         <div class="divider"></div>
     </main>
     <footer>
-        <p>
+        <div>String Replacer launched 11 May 2025.</div>
+        <div>
             <script>
                 const thisYear = new Date().getFullYear();
                 if (thisYear === 2025) {
@@ -58,10 +60,7 @@
                 }
             </script>
             <a href="https://github.com/mjbrechner">M.J. Brechner</a>
-        </p>
-        <!-- Profile picture created by M.J. Brechner © 2022 -->
-        <img class="profile-pic" alt="M.J. Brechner profile picture"
-            src="https://raw.githubusercontent.com/mjbrechner/diacritics-eraser/main/images/profile-pic.png">
+        </div>
     </footer>
     <script src="javascript/sr-index.js" async defer></script>
 </body>

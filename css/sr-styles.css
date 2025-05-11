@@ -46,14 +46,6 @@ h1 {
     transform: translate(1px);
 }
 
-.divider {
-    background-color: #862d52;
-    width: 75%;
-    height: 5px;
-    margin: 20px auto;
-    border-radius: 3px;
-}
-
 .textbox-area {
     display: flex;
     flex-direction: row;
@@ -83,6 +75,14 @@ textarea {
     border-style: solid;
     border-width: 4px;
     resize: none;
+}
+
+.divider {
+    background-color: #862d52;
+    width: 75%;
+    height: 3px;
+    margin: 5px auto;
+    border-radius: 3px;
 }
 
 #text-input {
@@ -176,12 +176,6 @@ footer {
     font-size: .8em;
 }
 
-.profile-pic {
-    width: 3.25em;
-    height: 3.25em;
-    padding: 1px;
-}
-
 /*tablet & above query*/
 @media only screen and (min-width: 768px) {
 
@@ -193,6 +187,11 @@ footer {
         width: 350px;
         height: 38px;
         font-size: 1.25em;
+    }
+
+    .divider {
+        height: 4px;
+        margin: 10px auto;
     }
 
     #text-input {
@@ -242,5 +241,10 @@ footer {
         width: 550px;
         height: 25px;
         font-size: 1.5em;
+    }
+
+    .divider {
+        height: 5px;
+        margin: 20px auto;
     }
 }
