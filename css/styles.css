@@ -145,6 +145,14 @@ a {
     text-decoration: underline;
 }
 
+.divider {
+    background-color: #862d52;
+    width: 90%;
+    height: 3px;
+    margin: 5px auto;
+    border-radius: 3px;
+}
+
 footer {
     display: flex;
     flex-direction: column;
@@ -165,12 +173,12 @@ footer {
 @media only screen and (min-width: 768px) {
 
     h1 {
-        font-size: 2.5em;
+        font-size: 2.25em;
     }
 
     .explanatory-text {
         padding: 0 0 .5em;
-        margin: 0 25% 10px 25%;
+        margin: 0 15% 10px 15%;
         font-size: 1em;
     }
 
@@ -205,7 +213,30 @@ footer {
         text-shadow: .5px .5px 1px #a8717f;
     }
 
+    .divider {
+        width: 70%;
+        margin: 10px auto;
+    }
+
     footer {
         font-size: 1em;
+    }
+}
+
+/*desktop query*/
+@media only screen and (min-width: 1150px) {
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .explanatory-text {
+        padding: 0 0 .5em;
+        margin: 0 20% 10px 20%;
+        font-size: 1em;
+    }
+
+    .divider {
+        width: 60%;
     }
 }

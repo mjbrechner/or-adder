@@ -189,10 +189,10 @@ footer {
         font-size: 1.25em;
     }
 
-    .divider {
+    /* .divider {
         height: 4px;
         margin: 10px auto;
-    }
+    } */
 
     #text-input {
         background-color: #FBF8F1;
@@ -243,8 +243,8 @@ footer {
         font-size: 1.5em;
     }
 
-    .divider {
+    /* .divider {
         height: 5px;
         margin: 20px auto;
-    }
+    } */
 }
